@@ -1,0 +1,17 @@
+[Desktop Entry]
+Version={{ version }}
+Name={{ name }}
+Comment={{ comment }}
+Exec={{ app_paths["sh"] }}
+Terminal={{ "true" if terminal else "false" }}
+Type=Application
+Icon={{ app_paths["icon"] }}
+Categories={{ categories }}
+MimeType={{ mime_types }}
+StartupWMClass={{ startup_wm_class }}
+StartupNotify={{ "true" if startup_notify else "false" }}
+X-WebApp-Browser={{ browser }}
+X-WebApp-URL={{ url }}
+X-WebApp-Navbar={{ "true" if navbar else "false" }}
+X-WebApp-PrivateWindow={{ "true" if private else "false" }}
+X-WebApp-Isolated={{ "true" if isolated else "false" }}

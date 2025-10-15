@@ -1,0 +1,5 @@
+#!/bin/sh
+set -euo pipefail
+{{ browser }} --app={{ url }} \
+              --user-data-dir={{ app_paths["profile"] }} \
+              {{ " --incognito" if private else "" }}
